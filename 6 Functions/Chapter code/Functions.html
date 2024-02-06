@@ -1,0 +1,119 @@
+de<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Functions</title>
+</head>
+<body>
+  <script>
+    // let age=34;
+    // function printAge(){
+    //   console.log(`Your Age is : ${age}`);
+    // }
+
+    // age=12;
+    // printAge();
+
+    // age=67;
+    // printAge();
+
+    // function generateRandom(){
+    //   let random=Math.random()*3;
+    //   return random;
+    // }
+
+    // console.log(generateRandom);
+    // console.log(generateRandom);
+    // console.log(generateRandom);
+    // console.log(generateRandom);
+    // console.log(generateRandom);
+
+    // let display=generateRandom();
+    
+    // function determineDriverStatus(age){
+    //   //  age=45;
+    //   let status;
+    //   if(age>=18){
+    //     status="You can Drive";
+    //   }
+    //   else{
+    //     status="You cannot Drive";
+    //   }
+    //   return status;
+    // }
+
+    // xyz=determineDriverStatus(9);
+    // console.log(xyz);
+
+    // console.log(determineDriverStatus());
+
+    // console.log(determineDriverStatus(159));
+      
+    // console.log(determineDriverStatus(9));
+    // console.log(determineDriverStatus(15));
+    // console.log(determineDriverStatus(67));
+  
+
+    // function determineDriverStatus(){
+    //   let age=45;
+    //   let status;
+    //   if(age>=18){
+    //     status="You can Drive";
+    //   }
+    //   else{
+    //     status="You cannot Drive";
+    //   }
+    //   return status;
+    // }
+
+    // console.log(determineDriverStatus());
+
+//USING RETURN  
+    function determineDriverStatus(){
+      let age=55;
+      let status;
+      if(age>=18){
+        return "You can Drive";
+      }
+      else{
+        return "You cannot Drive";
+      }
+      
+    }
+
+    console.log(determineDriverStatus());
+
+//USING PARAMETERS
+    function sum(a,b){
+      //return a+b;
+      //OR
+      let sum=a+b;
+      return sum;
+    }
+
+    let num=sum(10,10);
+    console.log(num)
+
+    console.log(sum(5,4));
+    console.log(sum(0,8));
+    console.log(sum(2,2));
+    console.log(sum(6,9));
+    console.log(sum(5,4));
+
+    function greetings(name){
+      console.log(`Namaste ${name} Uncle`);
+    }
+
+    greetings('Aryan');
+
+
+//Agar Kisi ne greetings() function me value nhi daali to problem hojayegi, aur isko counter krne ke liye hum default value daal skte h like below
+
+    function greetings2(name='Mr'){
+      console.log(`Greetings ${name} Uncle`);
+    }
+
+    greetings2()//default greetings Mr uncle aayaga but agar koi value daal toh apne aap woh update krdega
+
+  </script>
+</body>
+</html>

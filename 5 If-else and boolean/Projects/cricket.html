@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <style>
+    body{
+      font-family:cursive;
+      color: aliceblue;
+      text-align: center;
+      width: auto;
+      height: auto;
+      /*background: url(Images/istockphoto-1255328634-612x612.jpeg) no-repeat center center/cover; OR USE THE FOLLOWING BELOW*/
+      background-image: url(Images/istockphoto-1255328634-612x612.jpeg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    #btn1{
+      height: 30px;
+      width: 70px;
+      background-color:red;
+      color: aliceblue;
+      border-radius: 11px;
+    }
+    #btn2{
+      height: 30px;
+      width: 70px;
+      background-color:yellow;
+      color: rgb(0, 0, 0);
+      border-radius: 11px;
+    }
+    #btn3{
+      height: 30px;
+      width: 70px;
+      background-color:green;
+      color: aliceblue;
+      border-radius: 11px;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Bat Ball Stump Game</h1>
+  
+  <button id="btn1" onclick="
+  console.log('You have chosen to Bat');
+  let randomNumber1=Math.random()*3;//value of math.random() is 0 to 1(points me jaise 0.123) and as we have 3 Values/buttons(bat ball wicket) we need to multiply by 3 to generate random numbers between 0 and 3
+  let computerChoice1;
+  if(randomNumber1>0 && randomNumber1<=1){
+    computerChoice1='Bat';
+    //console.log('Computer choice is Bat');
+  }
+  else if(randomNumber1>1 && randomNumber1<=2){
+    computerChoice1='Ball';
+    //console.log('Computer choice is Ball');
+  }
+  else{
+    computerChoice1='Stump';
+    //console.log('Computer choice is Stump');
+  }
+  //TO display the computer choice
+  let computerDisplayMsg1=computerChoice1;
+
+  //For Displaying the results
+  let finalResult1;
+  if(computerChoice1=='Ball'){
+    finalResult1=('You Won')
+  }
+  else if(computerChoice1=='Bat'){
+    finalResult1=('its a tie')
+  }
+  else{
+    finalResult1=('Computer won');
+  }
+
+  alert(`You have chosen Bat, Computer choice is ${computerDisplayMsg1} and ${finalResult1}`);
+
+  ">Bat</button>
+
+  
+<!--For Ball-->
+  <button id="btn2" onclick="
+   console.log('You have chosen to Ball');
+  let randomNumber2=Math.random()*3;//value of math.random() is 0 to 1(points me jaise 0.123) and as we have 3 Values/buttons(bat ball wicket) we need to multiply by 3 to generate random numbers between 0 and 3
+  let computerChoice2;
+  if(randomNumber2>0 && randomNumber2<=1){
+    computerChoice2='Bat';
+    //console.log('Computer choice is Bat');
+  }
+  else if(randomNumber2>1 && randomNumber2<=2){
+    computerChoice2='Ball';
+    //console.log('Computer choice is Ball');
+  }
+  else{
+    computerChoice2='Stump';
+    //console.log('Computer choice is Stump');
+  }
+  //To display the computer choice
+  let computerDisplayMsg2=computerChoice2;
+
+  //For Displaying the results
+  let finalResult2;
+  if(computerChoice2=='Ball'){
+    finalResult2=(`It's a tie`);
+  }
+  else if(computerChoice2=='Bat'){
+    finalResult2=('Computer Won');
+  }
+  else{
+    finalResult2=('You Won!');
+  }
+
+  alert(`You have chosen Ball, Computer choice is ${computerDisplayMsg2} and ${finalResult2}`);
+
+  ">Ball</button>
+
+  <!--For Stump-->
+  <button id="btn3" onclick="
+   console.log('You have chosen to Stump');
+  let randomNumber3=Math.random()*3;//value of math.random() is 0 to 1(points me jaise 0.123) and as we have 3 Values/buttons(bat ball wicket) we need to multiply by 3 to generate random numbers between 0 and 3
+  let computerChoice3;
+  if(randomNumber3 && randomNumber3<=1){
+    computerChoice3='Bat';
+    //console.log('Computer choice is Bat');
+  }
+  else if(randomNumber3>1 && randomNumber3<=2){
+    computerChoice3='Ball';
+    //console.log('Computer choice is Ball');
+  }
+  else{
+    computerChoice3='Stump';
+    //console.log('Computer choice is Stump');
+  }
+  //TO display the computer choice
+  let computerDisplayMsg3=computerChoice3;
+
+  //For Displaying the results
+  let finalResult3;
+  if(computerChoice3=='Stump'){
+    finalResult3=(`It's a Tie`);
+  }
+  else if(computerChoice3=='Bat'){
+    finalResult3=('You Won!')
+  }
+  else{
+    finalResult3=('Computer won');
+  }
+
+  alert(`You have chosen Stump, Computer choice is ${computerDisplayMsg3} and ${finalResult3}`);
+
+  ">Stump</button>
+
+</body>
+</html>

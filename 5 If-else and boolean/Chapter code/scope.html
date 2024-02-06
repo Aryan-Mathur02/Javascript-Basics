@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Scope</title>
+</head>
+<body>
+  <script>
+    let age=10;
+    let displayMessage;//idhar displayMessage global variable declared h. So its mesage can be displayed anywhere in the code
+    if(age>18){
+      displayMessage="You can drive";
+    }
+    else{
+      displayMessage="You cannout drive";
+    }
+    console.log(displayMessage);
+  </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="calculator.css">
+
+  <title>Calculator</title>
+</head>
+<body>
+  <div class="intro">
+    <h1>Calculator using JS</h1>  
+  </div>
+  <div id="calculator">
+    <input type="text" id="display-screen" readonly><!--by reaonly we cant enter variables in the input section...only numeric values accepted-->
+    <div class="button-content">
+      <button class="button" id="clear"
+      onclick="currentDisplay=' '; //Clear button me current display value ''(empty) rakhenge instead of a value
+      document.querySelector('#display-screen').value=currentDisplay;">C</button>
+
+      <button class="button" onclick="currentDisplay=currentDisplay + '1';
+       document.querySelector('#display-screen').value=currentDisplay;">1</button>
+
+      <button class="button" onclick="currentDisplay=currentDisplay + '2';
+      document.querySelector('#display-screen').value=currentDisplay;">2</button>
+
+      <button class="button" id="operators"
+      onclick="currentDisplay=currentDisplay + '+';
+      document.querySelector('#display-screen').value=currentDisplay;">+</button>
+
+      <button class="button" 
+      onclick="currentDisplay=currentDisplay + '3';
+      document.querySelector('#display-screen').value=currentDisplay;">3</button>
+
+      <button class="button"
+      onclick="currentDisplay=currentDisplay + '4';
+      document.querySelector('#display-screen').value=currentDisplay;">4</button>
+
+      <button class="button" id="operators"
+      onclick="currentDisplay=currentDisplay + '-';
+      document.querySelector('#display-screen').value=currentDisplay;">-</button>
+
+      <button class="button"
+      onclick="currentDisplay=currentDisplay + '5';
+      document.querySelector('#display-screen').value=currentDisplay;">5</button>
+
+      <button class="button"
+      onclick="currentDisplay=currentDisplay + '6';
+      document.querySelector('#display-screen').value=currentDisplay;">6</button>
+
+      <button class="button" id="operators"
+      onclick="currentDisplay=currentDisplay + '*';
+      document.querySelector('#display-screen').value=currentDisplay;">*</button>
+
+      <button class="button"
+      onclick="currentDisplay=currentDisplay + '7';
+      document.querySelector('#display-screen').value=currentDisplay;">7</button>
+
+      <button class="button" 
+      onclick="currentDisplay=currentDisplay + '8';
+      document.querySelector('#display-screen').value=currentDisplay;">8</button>
+
+      <button class="button" id="operators"
+      onclick="currentDisplay=currentDisplay + '/';
+      document.querySelector('#display-screen').value=currentDisplay;">/</button>
+
+      <button class="button" onclick="currentDisplay=eval(currentDisplay);
+      document.querySelector('#display-screen').value=currentDisplay;">9</button>
+
+      <button class="button"
+      onclick="currentDisplay=currentDisplay + '0';
+      document.querySelector('#display-screen').value=currentDisplay;">0</button>
+
+      <button class="button" id="operators"
+      onclick="currentDisplay=eval(currentDisplay);//eval is used to add 'numbers in string format' mtlb ('2'+'3') will result in 5 instead of 23...we are using eval as all the numbers are in '' format
+      document.querySelector('#display-screen').value=currentDisplay;">=</button>
+
+      <button class="button" id="operators"
+      onclick="currentDisplay=currentDisplay + '.';
+      document.querySelector('#display-screen').value=currentDisplay;">.</button>
+    </div>
+  </div>
+
+  <script>
+    let currentDisplay="";//isko empty rakhenge cuz input user dalega
+    document.querySelector("#display-screen").value=currentDisplay;//value property is typically used with form elements like INPUT fields, selects, and textareas. If you want to get the current value of an input field selected using querySelector aur .innerText paras me use hota h
+  </script>
+</body>
+</html>

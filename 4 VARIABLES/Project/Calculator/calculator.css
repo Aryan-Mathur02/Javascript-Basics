@@ -1,0 +1,34 @@
+.intro{
+  height: 50px;
+  width: 300px;
+  margin: auto;
+}
+#calculator{
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 200px;
+  /*here height apne aap badigi as it is parent div ya height:auto krskte h*/
+  margin: auto;
+}
+#display-screen{
+  margin: 10px;
+  width:170px;
+  font-size: 25px;
+}
+.button-content{
+  display: flex;/* display flex puts all the elements in one direction(row)*/
+  justify-content: center;
+  flex-wrap: wrap;/* is the no. of elements exceed in the parent div then the element begain to shrink and to avoid that we use flex-wrap:wrap...isse no next elements h jaise '+' '3' '4' in calculator woh next row me shift hojayenge*/
+
+}
+.button{
+  width:50px;
+  height: 50px;
+  margin: 3px;
+}
+#operators{
+  border:2px solid orange;
+}
+#clear{
+  border: 2px dotted red;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pra</title>
+</head>
+<body>
+  <script>
+    //Question 1
+    function odd_even(num){
+      if(num%2==0){
+        return "Even";
+      }
+      else{
+        return "Odd";
+      }
+
+      //OR return num1>num2 ? num1 : num2;
+      
+    }
+
+
+    console.log(odd_even(10));
+    console.log(odd_even(7));
+    console.log(odd_even(99));
+    console.log(odd_even(24));
+
+
+    //Question 2    
+      function larger(num1,num2){
+        if(num1==num2){
+          return "Both Numbers are equal";
+        }
+        else if(num1>num2){
+          return `Largest number is ${num1}`;
+        }
+        else{
+          return `Largest is number ${num2};`;
+        }
+      }
+
+      console.log(larger(5,10));
+      console.log(larger(5,5));
+      console.log(larger(12,6));
+
+    //Question 3
+    function CelsiusToFahrenheit(C){
+      //Formula for converting C to F F=(9/5)*C+32
+
+      return (9/5)*C+32;
+      
+      // OR
+      //let F;
+      // F=(9/5)*C+32;
+
+      // return F;
+    }
+
+    console.log(CelsiusToFahrenheit(38));
+    console.log(CelsiusToFahrenheit(0));
+    console.log(CelsiusToFahrenheit(100));
+    console.log(CelsiusToFahrenheit(-1));
+
+    
+  </script>
+</body>
+</html>

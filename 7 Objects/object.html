@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Objects</title>
+</head>
+<body>
+  <script>
+    // let employee={company: "Apple", salary:50000, user :"Aryan", age:22,
+    // }
+    
+    // console.log(employee);
+    // console.log(employee.user); 
+    // //No changing the user name(value)
+    // employee.user="Mukul";
+    // console.log(employee.user);
+
+    // console.log(employee);
+
+
+    // console.log(employee.age);//to Access values in object we use . or [] OR
+    // console.log((employee['age']));
+
+    // //Deleting a key(value)
+    // delete employee.age;
+    // console.log(employee);
+
+    // let product={
+    //   company:'Mango', age:'22',price:500,
+    //   displayPrice:function(){
+    //    console.log(`Price of the product is rupees ${product.price}`)
+    //   }
+    // };
+
+   //console.log(product.displayPrice());
+
+//AUTOBOXING
+    // console.log("Aryan Mathur".length);
+    // console.log("Aryan Mathur".toUpperCase());
+    // console.log("Aryan Mathur".replace("Aryan","Mukul"));
+
+//OBJECT REFERENCES
+    // let x={num:5}
+    // let y=x;
+
+    // console.log(x.num);
+    // console.log(y.num);
+    // x.num=10;
+    // console.log(x.num);
+    // console.log(y.num);
+
+    let product={
+      company:"Apple", price:50000, name:"Aryan"
+    };
+//OBJECT DESTRUCTURING
+//Company aur price naam ke 2 variable bna liye jisme product kE COMPANY AUR PRICE KA data aajayega 
+    let {company,price}=product;
+    console.log(company);
+    console.log(price);
+  </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>JSON</title>
+</head>
+<body>
+  <script>
+    // let product={
+    //   name:"Shirt", price:1200, stars:4.5,reviews:580,};
+
+    //   console.log(product);
+    //   console.log(typeof(product));
+
+    //   let str=JSON.stringify(product);//convert product(object) into string using stringify function
+    //   console.log(str);
+    //   console.log(typeof(str));//its type is now string
+
+    //   let newProduct=JSON.parse(str)//Converting a str(String) back to Object using parse function
+    //   console.log(typeof newProduct);//Its Type is now object
+    //   console.log(newProduct);//product->str->newproduct...Pehele product ko str me convert kra and then the data of product went into NewProduct
+
+
+
+
+//LOCAL STORAGE
+  //Storing data into local storage
+  localStorage.setItem("Name","Aryan");//Key,Value
+  localStorage.setItem("Price","1200");//localStorage.setItem means inserting price and 1200 into the strorage of the browser.
+
+  //WE CAN ACCESS THE DATA BY GOING INTO INSPECT->APPLICATION->STORAGE->LOCAL STORAGE
+
+  console.log(localStorage.getItem("Name"));
+
+  let product={
+    name:"Shirt", price:1200, stars:4.5,reviews:580,};
+
+    localStorage.setItem("product",product)//we cannot display the properties of an object in local storage as LS only accepts strings in it...so using JSON we can convert the properties of the object(product) into the strings below
+
+    localStorage.setItem("Product",JSON.stringify(product));
+
+    let product2=(JSON.parse(localStorage.getItem("Product")));//parse krdiya mtlb we got & converted product back into and an object and displayed it into the console below
+
+    console.log(typeof(product2));
+
+    //TO REMOVE AN ITEM FROM THE STORAGE
+    localStorage.removeItem("Price");
+
+    //TO COMPLETELY DELETE THE TABLE
+    localStorage.clear()
+  </script>
+</body>
+</html>

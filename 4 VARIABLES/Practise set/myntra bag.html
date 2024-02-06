@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Myntra Bag</title>
+  <link rel="stylesheet" href="myntra bag.css"><!--attaching the css file named myntra bad.css-->
+</head>
+<body>
+  <main>
+    
+    <button class="bag-button" onclick="cardQuantity=cardQuantity+1; 
+    document.querySelector('#cart-summary').innerText=`Your Bag has ${cardQuantity} items`" >Add to Bag</button><!--or onclick="cardQuantity+=cardQuantity+1"-->
+    
+    <button class="wish-button" onclick="cardQuantity=cardQuantity-1; 
+    document.querySelector('#cart-summary').innerText=`Your Bag has ${cardQuantity} items`">Move to Wishlist</button>
+
+    <button class="bag-button" onclick="cardQuantity=cardQuantity+2;
+    document.querySelector('#cart-summary').innerText=`Your Bag has ${cardQuantity} items` ">Add 1+1 sale item</button><!--using the same bag-button class -->
+
+    <h1 id="cart-summary"></h1><!--cart-summary id is used to mention this specific 'h1' heading-->
+
+    <br>
+    <hr>
+
+  </main>
+  <script>
+    let cardQuantity=0;
+    document.querySelector("#cart-summary").innerText=`Your Bag has ${cardQuantity} items` // OR      "Your Bag has " + cardQuantity + " items ";
+    
+
+    //document.querySelector is used to access any element by its id or class and then we can make changes to it...here we appended innerText so that we can display, change and update our message.
+    
+    //innerText is used to change the content and we appended innerText with cart-summary which is the tag of our h1 heading...meaning we are indirectly changing the value of the h1 using cardQuantity.
+
+    //Here h1 is seen as a placeholder for our message and to connect and make changes with h1 we created a cart-summarry tag. Then we can make further updates and manipulations in the h1
+
+    //the main problem in displaying items in h1 is that we cant update the content.
+
+
+
+
+  </script>
+</body>
+</html>
